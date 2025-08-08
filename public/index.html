@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roast Your Job</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Roast Your Job</h1>
+      <p>Enter your job title to get a free, AI‑generated roast and sticker.</p>
+      <form id="roastForm">
+        <label>
+          Job title
+          <input type="text" id="job" name="job" required />
+        </label>
+        <label>
+          Sticker style
+          <select id="style" name="style">
+            <option value="modern">Modern</option>
+            <option value="retro">Retro</option>
+            <option value="minimal">Minimal</option>
+            <option value="pop-art">Pop Art</option>
+          </select>
+        </label>
+        <button type="submit">Get Roast</button>
+      </form>
+      <div id="roastResult" class="hidden">
+        <h2>Your Roast</h2>
+        <p id="roastText"></p>
+        <img id="stickerImg" alt="Sticker preview" />
+        <div id="merchForm" class="hidden">
+          <h3>Create Merch</h3>
+          <label>
+            Product
+            <select id="product" name="product">
+              <option value="sticker">Sticker</option>
+              <option value="mug">Mug</option>
+              <option value="tee">T‑Shirt</option>
+              <option value="mousepad">Mousepad</option>
+              <option value="pillow">Pillow</option>
+              <option value="poster">Poster</option>
+            </select>
+          </label>
+          <div id="variantOptions"></div>
+          <button id="buyButton">Buy merch</button>
+        </div>
+      </div>
+      <div id="error" class="error"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
