@@ -1,0 +1,12 @@
+{
+  "name": "roastyourjob",
+  "version": "1.0.0",
+  "description": "AI job roast microsite with merch upsell",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "stripe": "^11.12.0"
+  }
+}
