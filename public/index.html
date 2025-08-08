@@ -4,16 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roast Your Job</title>
+    <!-- Import a modern, friendly font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <h1>Roast Your Job</h1>
-      <p>Enter your job title to get a free, AI‑generated roast and sticker.</p>
+    <!-- Hero section with attention‑grabbing headline and call to action -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>AI Roasts Your Job</h1>
+        <p>
+          Get a free AI‑generated roast of your job title, complete with a
+          custom sticker. Share the laughs and turn your roast into merch!
+        </p>
+        <a href="#generator" class="cta-button">Get Roasted</a>
+      </div>
+    </header>
+
+    <!-- Features section explaining the experience -->
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🔥</span>
+        <h3>Free Roast</h3>
+        <p>Instantly roast your job title with cutting‑edge AI.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎨</span>
+        <h3>Custom Sticker</h3>
+        <p>Choose modern, retro, minimal or pop‑art styles.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🛍️</span>
+        <h3>Get Merch</h3>
+        <p>Turn your roast into posters, tees, mugs and more.</p>
+      </div>
+    </section>
+
+    <!-- Generator section -->
+    <main id="generator">
+      <h2>Roast Your Job</h2>
+      <p>
+        Enter your job title and choose a sticker style. Your first roast is free!
+      </p>
       <form id="roastForm">
         <label>
           Job title
-          <input type="text" id="job" name="job" required />
+          <input type="text" id="job" name="job" placeholder="e.g. Software Engineer" required />
         </label>
         <label>
           Sticker style
@@ -27,11 +63,11 @@
         <button type="submit">Get Roast</button>
       </form>
       <div id="roastResult" class="hidden">
-        <h2>Your Roast</h2>
+        <h3>Your Roast</h3>
         <p id="roastText"></p>
         <img id="stickerImg" alt="Sticker preview" />
         <div id="merchForm" class="hidden">
-          <h3>Create Merch</h3>
+          <h4>Create Merch</h4>
           <label>
             Product
             <select id="product" name="product">
@@ -44,7 +80,7 @@
             </select>
           </label>
           <div id="variantOptions"></div>
-          <button id="buyButton">Buy merch</button>
+          <button id="buyButton">Buy Merch</button>
         </div>
       </div>
       <div id="error" class="error"></div>
